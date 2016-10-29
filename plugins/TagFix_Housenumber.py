@@ -28,7 +28,7 @@ class TagFix_Housenumber(Plugin):
 
     def init(self, logger):
         Plugin.init(self, logger)
-        self.errors[10] = {"item": 2060, "level": 3, "tag": ["addr", "fix:survey"], "desc": T_(u"addr:housenumber does not start by a number")}
+        self.errors[10] = {"item": 2060, "level": 3, "tag": ["addr", "fix:survey"], "desc": T_(u"addr:housenumber invalid")}
         self.errors[14] = {"item": 2060, "level": 3, "tag": ["addr", "fix:chair"], "desc": T_(u"Invalid tag on interpolation way")}
         self.errors[15] = {"item": 2060, "level": 3, "tag": ["addr", "fix:chair"], "desc": T_(u"Invalid addr:interpolation or addr:inclusion value")}
         self.Country = self.father.config.options.get("country")
